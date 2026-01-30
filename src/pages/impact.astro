@@ -1,0 +1,84 @@
+---
+import PageLayout from "../layouts/PageLayout.astro";
+import { IMPACT } from "../consts";
+
+const pageTitle = IMPACT.TITLE;
+const pageDescription = IMPACT.DESCRIPTION;
+---
+
+<PageLayout title={pageTitle} description={pageDescription}>
+  
+  <section class="animate font-sans text-black dark:text-white max-w-3xl mx-auto px-4 pt-32 pb-10">
+    <h1 class="text-3xl font-bold mb-6">Community & Impact</h1>
+    <p class="mb-10 opacity-75 leading-relaxed">
+      Beyond writing code, I am passionate about bridging the gap between technology and people. 
+      From mentoring global finalists at Google to creating educational content accessed by hundreds of thousands.
+    </p>
+
+    <div class="space-y-12">
+
+      <div class="relative border-l-2 border-neutral-300 dark:border-neutral-700 pl-6 py-2">
+        <span class="absolute -left-[9px] top-3 h-4 w-4 rounded-full bg-black dark:bg-white"></span>
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
+          <h2 class="text-xl font-bold">Google Solution Challenge Mentor</h2>
+          <span class="text-sm font-mono opacity-60">Jan 2024</span>
+        </div>
+        <p class="text-sm font-semibold opacity-80 mb-3">Google Developers • Global Finals</p>
+        <ul class="list-disc list-inside space-y-2 opacity-75 text-sm md:text-base">
+          <li>Invited by Google to serve as a <strong>Technical Mentor </strong> for the teams shortlisted for Global Finals.</li>
+          <li>Guided <strong>10+ shortlisted student teams</strong> on scalable architecture and cloud integration.</li>
+        </ul>
+      </div>
+
+      <div class="relative border-l-2 border-neutral-300 dark:border-neutral-700 pl-6 py-2">
+        <span class="absolute -left-[9px] top-3 h-4 w-4 rounded-full bg-neutral-400 dark:bg-neutral-600"></span>
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
+          <h2 class="text-xl font-bold">Viral Educational Content</h2>
+          <span class="text-sm font-mono opacity-60">2021 - Present</span>
+        </div>
+        <p class="text-sm font-semibold opacity-80 mb-3">GeeksForGeeks • YouTube</p>
+        <ul class="list-disc list-inside space-y-2 opacity-75 text-sm md:text-base mb-4">
+          <li>Authored the <strong>"Django Login System"</strong> tutorial on the GeeksForGeeks channel.</li>
+          <li>Achieved <strong>700,000+ views</strong> with organic growth.</li>
+        </ul>
+
+        <div class="w-full max-w-[480px] aspect-video rounded-xl overflow-hidden shadow-lg border border-neutral-200 dark:border-neutral-800">
+          <iframe 
+            class="w-full h-full"
+            src="https://www.youtube.com/embed/1UvTNMH7zDo" 
+            title="Django Login Tutorial" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+          </iframe>
+        </div>
+        </div>
+
+      <div class="relative border-l-2 border-neutral-300 dark:border-neutral-700 pl-6 py-2">
+        <span class="absolute -left-[9px] top-3 h-4 w-4 rounded-full bg-neutral-400 dark:bg-neutral-600"></span>
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
+          <h2 class="text-xl font-bold">Google DSC Lead</h2>
+          <span class="text-sm font-mono opacity-60">2021 - 2022</span>
+        </div>
+        <p class="text-sm font-semibold opacity-80 mb-3">IIIT Vadodara</p>
+        <ul class="list-disc list-inside space-y-2 opacity-75 text-sm md:text-base">
+          <li>Led a community of <strong>75+ students</strong> and hosted 20+ workshops.</li>
+          <li>Invited to exclusive <strong>Google Round-Table Meetups</strong> in Ahmedabad.</li>
+        </ul>
+      </div>
+
+      <div class="relative border-l-2 border-neutral-300 dark:border-neutral-700 pl-6 py-2">
+        <span class="absolute -left-[9px] top-3 h-4 w-4 rounded-full bg-neutral-400 dark:bg-neutral-600"></span>
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
+          <h2 class="text-xl font-bold">Microsoft Learn Student Ambassador</h2>
+          <span class="text-sm font-mono opacity-60">2020 - 2022</span>
+        </div>
+        <p class="text-sm font-semibold opacity-80 mb-3">Microsoft (Beta Level)</p>
+        <ul class="list-disc list-inside space-y-2 opacity-75 text-sm md:text-base">
+          <li>Mentored students on the Microsoft/GitHub tech ecosystem.</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+</PageLayout>
